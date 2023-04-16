@@ -13,9 +13,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f06, #42e695);
-    background-size: 200% 200%;
-    animation: gradientBG 30s ease infinite;
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* ... rest of the CSS remains unchanged ... */
+
 }
 
 @keyframes gradientBG {

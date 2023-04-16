@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f06, #42e695);
+    background-size: 200% 200%;
+    animation: gradientBG 30s ease infinite;
+}
+
+@keyframes gradientBG {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+   
+    }
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    max-width: 90%;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    background: #42e695;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #f06;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.result {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f06;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+}
